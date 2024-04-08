@@ -1,6 +1,8 @@
 interface intfr(input logic clk);
   bit       rst_n;
-  logic       ALU_en,a_en,b_en;
+  logic       ALU_en;
+  logic     a_en;
+  logic     b_en;
   logic [2:0] a_op;
   logic [1:0] b_op;
   logic signed [4:0] A;

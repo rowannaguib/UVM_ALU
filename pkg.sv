@@ -1,13 +1,15 @@
 package pkg;
 	import uvm_pkg::*;
-	`include "uvm_macros.svh"
-	`include "sequencer.sv"
-	`include "monitor.sv"
+ 	`include "uvm_macros.svh"
+	`include "configuration.sv"
+	`include "transaction.sv"
+	`include "sequence.sv"
 	`include "driver.sv"
-	`include "transaction.svh"
+	`include "monitor_before.sv"
+	`include "monitor_after.sv"
 	`include "agent.sv"
 	`include "scoreboard.sv"
-	`include "configuration.sv"
+	`include "cov.svh"
 	`include "env.sv"
 	`include "test.sv"
 endpackage: pkg

@@ -4,10 +4,10 @@ class agent extends uvm_agent;
 	uvm_analysis_port#(transaction) agent_ap_before;
 	uvm_analysis_port#(transaction) agent_ap_after;
 
-	sequencer		sa_seqr;
-	driver		sa_drvr;
-	monitor_before	sa_mon_before;
-	monitor_after	sa_mon_after;
+	sequencer		seqr;
+	driver		drvr;
+	monitor_before	mon_before;
+	monitor_after	mon_after;
 
 	function new(string name, uvm_component parent);
 		super.new(name, parent);
