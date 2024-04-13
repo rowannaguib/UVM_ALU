@@ -3,8 +3,8 @@ class env extends uvm_env;
       `uvm_component_utils(env)
   
        scoreboard sb;
-    agent ag;
-  cov   cv;
+		agent ag;
+		  cov 	cv;
   
       function new(string name, uvm_component parent);
           super.new(name, parent);
@@ -12,16 +12,14 @@ class env extends uvm_env;
 
       function void build_phase(uvm_phase phase);
           super.build_phase(phase);
-          ag = agent::type_id::create(.name("ag"), .parent(this));
-          sb = scoreboard::type_id::create(.name("sb"), .parent(this));
-          cv = cov::type_id::create(.name("cv"), .parent(this));
+        	
+        	sb = scoreboard::type_id::create(.name("sb"), .parent(this));
+        	ag = agent::type_id::create(.name("ag"), .parent(this));
+        	cv = cov::type_id::create(.name("cv"), .parent(this));
       endfunction: build_phase
   
       function void connect_phase(uvm_phase phase);
           super.connect_phase(phase);
-        
-//           ag.agent_ap_before.connect(sb.sb_export_before);
-//           ag.agent_ap_after.connect(sb.sb_export_after);
         
         ag.agent_ap_before.connect(sb.sb_import_before);
         ag.agent_ap_after.connect(sb.sb_import_after);
