@@ -4,8 +4,9 @@ class agent extends uvm_agent;
 	uvm_analysis_port#(transaction) agent_ap_before;
 	uvm_analysis_port#(transaction) agent_ap_after;
 
-	sequencer		seqr;
-	driver		drvr;
+	
+	driver			drvr;
+  	alu_sequencer		seqr; 
 	monitor_before	mon_before;
 	monitor_after	mon_after;
 
@@ -19,8 +20,9 @@ class agent extends uvm_agent;
 		agent_ap_before	= new(.name("agent_ap_before"), .parent(this));
 		agent_ap_after	= new(.name("agent_ap_after"), .parent(this));
 
-		seqr		= sequencer::type_id::create(.name("seqr"), .parent(this));
 		drvr		= driver::type_id::create(.name("drvr"), .parent(this));
+      	seqr		= alu_sequencer::type_id::create(.name("seqr"), .parent(this));
+		
 		mon_before	= monitor_before::type_id::create(.name("mon_before"), .parent(this));
 		mon_after	= monitor_after::type_id::create(.name("mon_after"), .parent(this));
 	endfunction: build_phase
