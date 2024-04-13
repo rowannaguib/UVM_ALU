@@ -2,7 +2,8 @@ class driver extends uvm_driver#(transaction);
 	`uvm_component_utils(driver)
 
 	virtual intfr vif;
-
+ 	transaction tx;
+  
 	function new(string name, uvm_component parent);
 		super.new(name, parent);
 	endfunction: new
@@ -11,8 +12,9 @@ class driver extends uvm_driver#(transaction);
 	function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
 
-      if(!uvm_config_db#(virtual intfr)::get(this,"*", "vif",vif))
-          `uvm_fatal("No vif found", {"virtual interface must be set for: ",get_full_name(),".vif"});
+      if(!uvm_config_db#(virtual intfr)::get(this,"*", "intfr",vif))
+        `uvm_fatal(get_full_name(), {"Failed to get VIF from config DB!, vif must be set for: ",".vif"});
+;
 	endfunction: build_phase
 
   //////////////   RESET PHASE   ////////////////////////////// 
@@ -20,7 +22,7 @@ class driver extends uvm_driver#(transaction);
     phase.raise_objection(this,"Reset phase has started");
     reset();
     phase.drop_objection(this,"Reset phase has ended");
-  endtask
+  endtask : reset_phase
     
   virtual task reset();
 		
@@ -32,21 +34,21 @@ class driver extends uvm_driver#(transaction);
       	vif.a_op 	<= 0;
       	vif.b_op 	<= 0;
       	vif.ALU_en 	<= 0;
-    	#200;
-    	vif.rst_n	<= 1;
+    #(50); 
+  	  	vif.rst_n	<= 1;
       	
   endtask: reset
   
   //////////////   RUN PHASE   //////////////////////////////
 	task run_phase(uvm_phase phase);
-		drive();
+   		drive();
 	endtask: run_phase
   
 //////////////   DRIVE() TASK   //////////////////////////////
 	
  	task drive();
-		transaction tx;
-		vif.A 		<= 0;
+		
+	vif.A 		<= 0;
 		vif.B 		<= 0;
 		vif.a_en	<= 0;
       	vif.b_en 	<= 0;
@@ -54,12 +56,12 @@ class driver extends uvm_driver#(transaction);
       	vif.a_op 	<= 0;
       	vif.b_op 	<= 0;
       	vif.ALU_en 	<= 0;
+       
 		
 		forever begin
+           @(posedge vif.clk);
 			seq_item_port.get_next_item(tx);
-          @(posedge vif.clk);
-        //  `uvm_info(“driver”, tx.sprint(), UVM_MEDUIM);
-			vif.driver_cb.A 	<= tx.A;	
+   			vif.driver_cb.A 	<= tx.A;	
 			vif.driver_cb.B 	<= tx.B;	
 			vif.driver_cb.a_en	<= tx.a_en;
 			vif.driver_cb.b_en 	<= tx.b_en;
@@ -71,4 +73,5 @@ class driver extends uvm_driver#(transaction);
 					
 		end
 	endtask: drive
+                                     
 endclass: driver
