@@ -1,8 +1,8 @@
 interface intfr(input logic clk);
-  bit       rst_n;
+  logic       rst_n;
   logic       ALU_en;
-  logic     a_en;
-  logic     b_en;
+  logic			a_en;
+  logic			b_en;
   logic [2:0] a_op;
   logic [1:0] b_op;
   logic signed [4:0] A;
@@ -30,7 +30,7 @@ interface intfr(input logic clk);
   input  b_en;
   input  a_op;
   input  b_op;
- 
+ 	input c;
   endclocking 
   
 endinterface : intfr
