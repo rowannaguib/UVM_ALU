@@ -1,1 +1,0 @@
-ALU.v generator.svh driver.svh monitor.svh scoreboard.svh coverage.svh interface.sv transaction.svh testbench.svh test_pkg.sv
