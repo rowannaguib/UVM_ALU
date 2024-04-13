@@ -6,7 +6,7 @@ class monitor_after extends uvm_monitor;
 	virtual intfr vif;
 
 	transaction tx;
-    
+     int previous_output;
   //--------------------------------------------------------
   //Constructor
   //--------------------------------------------------------
@@ -32,8 +32,7 @@ class monitor_after extends uvm_monitor;
 	function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
 	 
-  		if(!(uvm_config_db #(virtual intfr)::get(this, "*", "vif", vif))) 
-    //  `uvm_error("MONITOR_CLASS", "Failed to get VIF from config DB!");
+  		if(!(uvm_config_db #(virtual intfr)::get(this, "*", "intfr", vif))) 
           `uvm_fatal(get_full_name(),{"Failed to get VIF from config DB!, vif must be set for:" , ".intfr"});
           
    	mon_ap_after= new(.name("mon_ap_after"), .parent(this));
@@ -41,18 +40,16 @@ class monitor_after extends uvm_monitor;
 	endfunction: build_phase
 
 	task run_phase(uvm_phase phase);
-// 		tx = transaction::type_id::create(.name("tx"), .contxt(get_full_name()));
-      tx = transaction::type_id::create(.name("tx"));
+      // 		tx = transaction::type_id::create(.name("tx"), .contxt(get_full_name()));
 		forever begin
-// 			@(posedge vif.sig_clock)
-// 			begin
+         tx = transaction::type_id::create(.name("tx")); 
 				//sample output
               @(posedge vif.clk);
-        		tx.c = tx.c;
+        		tx.c = vif.monitor_cb.c;
               
               // send item to scoreboard
               mon_ap_after.write(tx);
-              `uvm_info({"monitor_after",get_full_name()},{"output tx sent to scoreboard"}, UVM_MEDIUM);
+          `uvm_info({"monitor_after",get_full_name()},{"output tx sent to scoreboard"}, UVM_HIGH);
                
 		end
 	endtask: run_phase
