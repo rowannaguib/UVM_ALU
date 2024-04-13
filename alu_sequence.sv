@@ -26,20 +26,15 @@ endclass: base_sequence  */
 class alu_sequence extends uvm_sequence#(transaction);
 	`uvm_object_utils(alu_sequence)
 
+  transaction tx;
+  
 	function new(string name = "");
 		super.new(name);
 	endfunction: new
       
-   /*   task pre_body();
-        if(stating_phase != null)
-          starting_phase.raise_objection(this);
-          
-      endtask
-      */
 	task body();
-		transaction tx;
 		
-      repeat(100) begin
+      repeat(5) begin
 /*		tx = transaction::type_id::create(.name("tx"),.contxt(get_full_name()));
 
 		start_item(tx);
@@ -50,13 +45,7 @@ class alu_sequence extends uvm_sequence#(transaction);
           `uvm_do(tx);
 		end
 	endtask: body
-   /*   
-      task post_body();
-        if(stating_phase != null)
-          starting_phase.drop_objection(this);
-          
-      endtask
-      */
+
 endclass: alu_sequence
 
-typedef uvm_sequencer#(transaction) sequencer;
+typedef uvm_sequencer#(transaction) alu_sequencer;
