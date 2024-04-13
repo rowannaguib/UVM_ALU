@@ -46,8 +46,8 @@ always @ (posedge clk or negedge rst_n) begin
                     AND_a:  c <= A & B;
                     AND__a: c <= A & B;
                     XNOR_a: c <= ~(A ^ B);
-                    NULL_a: assert (A != 5'b0) else $error("illegal input alu_in_b != 8'h00");
-                  //  default: 
+              //      NULL_a: assert (A != 5'b0) else $error("illegal input alu_in_b != 8'h00");
+                    default: c <=6'b0; 
                 endcase
             end
             else if(b_en && !a_en)begin //b_op set 1
@@ -55,8 +55,8 @@ always @ (posedge clk or negedge rst_n) begin
                     NAND_b_1: c <= ~(A & B);
                     ADD_b_1 : c <= A + B;
                     ADD_b_1 : c <= A + B;
-                    NULL_b_1: assert (A != 5'b0) else $error("illegal input alu_in_b != 8'h00");
-                  //  default: 
+                 //   NULL_b_1: assert (A != 5'b0) else $error("illegal input alu_in_b != 8'h00");
+                   default: c <=6'b0;
                 endcase
             end
             else if(a_en && b_en)begin // b_op set 2
@@ -65,9 +65,11 @@ always @ (posedge clk or negedge rst_n) begin
                     XNOR_b_2: c <= ~(A ^ B);
                     DEC_b_2 : c <= A - 1;
                     ADD2_b_2: c <= B + 2;
-                   // default: 
+                   default: c <=6'b0;
                 endcase
             end
+          else 
+            c <= c;
         end
         else 
             c <= c;
