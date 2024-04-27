@@ -3,7 +3,7 @@
 comp  : clean vcs
 #-------------------------------------------------------------------------------------------------------
 vcs   :
-	vcs -sverilog -f files.f -cm line+fsm+tgl+branch+cond -timescale=1ns/1ps +vcs+flush+all -full64  -R  +vc  +v2k  -fsdb -debug_all -l vcs_out.log
+	vcs -sverilog -ntb_opts uvm -f files.f -cm line+fsm+tgl+branch+cond -timescale=1ns/1ps +vcs+flush+all -full64  -R  +vc  +v2k  -fsdb -debug_all -l vcs_out.log
 #-------------------------------------------------------------------------------------------------------
 verdi  :
 	verdi -f files.f -ssf -sv tb.fsdb &
