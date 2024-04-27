@@ -1,0 +1,3358 @@
+Command: vcs -sverilog -ntb_opts uvm -f files.f -cm line+fsm+tgl+branch+cond -timescale=1ns/10ps \
++vcs+flush+all -full64 -R +vc +v2k -fsdb -debug_all -l vcs_out.log
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-fsdb' will be deprecated in a future release.  Please use 
+  '-debug_acc+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Sun Apr 28 01:30:36 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_version.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_misc.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_object.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_pool.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_queue.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_factory.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_registry.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_resource.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_printer.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_packer.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_event.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_callback.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_phase.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_domain.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_root.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_component.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_objection.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_globals.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_env.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_test.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_pkg.sv'.
+Parsing design file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/msglog.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file './ALU.v'
+Parsing design file './top_uvm.sv'
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Back to file './top_uvm.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+./top_uvm.sv, 19
+classes
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/synopsys/vcs-mx/O-2018.09-1/etc/uvm/uvm_macros.svh'.
+Back to file './top_uvm.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       top
+TimeScale is 1 ns / 10 ps
+VCS Coverage Metrics Release O-2018.09-1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+Starting vcs inline pass...
+10 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory `/home/ICer/ALU_UVM/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+-L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib  uvm_dpi.o uvm_verdi_dpi.o     _64519_archive_1.so \
+_prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so    rmapats_mop.o rmapats.o rmar.o \
+rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lreader_common /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libBA.a \
+-luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o  _vcs_pli_stub_.o \
+/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/ICer/ALU_UVM/csrc'
+Command: /home/ICer/ALU_UVM/./simv -cm_runsilent -cm line+fsm+tgl+branch+cond +vcs+flush+all +vc +v2k -a vcs_out.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Apr 28 01:30 2024
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test gen_test...
+UVM_INFO ./top_uvm.sv(625) @ 500: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO ./top_uvm.sv(619) @ 500: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO ./top_uvm.sv(625) @ 1500: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO ./top_uvm.sv(619) @ 1500: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO ./top_uvm.sv(543) @ 1500: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO ./top_uvm.sv(544) @ 1500: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @911 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 15: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @903 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 25: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 25: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 25: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 25: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @928 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h18 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 25: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @920 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 35: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 35: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 35: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 35: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @944 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1b 
+  B       integral     5     'h1e 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 35: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @936 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 45: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 45: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 45: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 45: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @960 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1c 
+  B       integral     5     'h13 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 45: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @952 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 55: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 55: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 55: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 55: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @976 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1b 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 55: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @968 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 65: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 65: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 65: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 65: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @992 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1e 
+  B       integral     5     'h1d 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 65: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @984 
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 75: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 75: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 75: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 75: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1008
+  rst_n   integral     1     'h0  
+  A       integral     5     'h12 
+  B       integral     5     'h10 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 75: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1000
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 85: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 85: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 85: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 85: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1024
+  rst_n   integral     1     'h0  
+  A       integral     5     'h11 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 85: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1016
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 95: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 95: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 95: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 95: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1040
+  rst_n   integral     1     'h0  
+  A       integral     5     'h12 
+  B       integral     5     'h1d 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 95: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1032
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 105: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 105: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 105: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 105: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1056
+  rst_n   integral     1     'h0  
+  A       integral     5     'h14 
+  B       integral     5     'h16 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 105: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1048
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 115: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 115: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 115: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 115: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1108
+  rst_n   integral     1     'h0  
+  A       integral     5     'h15 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 115: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1084
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 125: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 125: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 125: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 125: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1108
+  rst_n   integral     1     'h0  
+  A       integral     5     'h15 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 125: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1100
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 135: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 135: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 135: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 135: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1124
+  rst_n   integral     1     'h0  
+  A       integral     5     'h17 
+  B       integral     5     'h1b 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 135: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1116
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 145: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 145: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 145: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 145: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1140
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1c 
+  B       integral     5     'h1d 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 145: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1132
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 155: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 155: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 155: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 155: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1156
+  rst_n   integral     1     'h0  
+  A       integral     5     'h17 
+  B       integral     5     'h14 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 155: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1148
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 165: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 165: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 165: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 165: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1172
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1f 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 165: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1164
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 175: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 175: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 175: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 175: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1188
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1b 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 175: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1180
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 185: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 185: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 185: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 185: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1204
+  rst_n   integral     1     'h0  
+  A       integral     5     'h11 
+  B       integral     5     'h0  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 185: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1196
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 195: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 195: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 195: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 195: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1220
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1e 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 195: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1212
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 205: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 205: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 205: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 205: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1236
+  rst_n   integral     1     'h0  
+  A       integral     5     'h11 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 205: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1228
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 215: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 215: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 215: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 215: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1252
+  rst_n   integral     1     'h0  
+  A       integral     5     'h13 
+  B       integral     5     'h6  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 215: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1244
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 225: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 225: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 225: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 225: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1268
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1b 
+  B       integral     5     'h17 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 225: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1260
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 235: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 235: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 235: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 235: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1284
+  rst_n   integral     1     'h1  
+  A       integral     5     'h17 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h32 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 235: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1276
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h32 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 245: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 245: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 245: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 245: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1300
+  rst_n   integral     1     'h1  
+  A       integral     5     'h18 
+  B       integral     5     'h16 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h32 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 245: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1292
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h32 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 255: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 255: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 255: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 255: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1316
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1c 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3f 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 255: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1308
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3f 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 265: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 265: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 265: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 265: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1332
+  rst_n   integral     1     'h1  
+  A       integral     5     'h15 
+  B       integral     5     'h11 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 265: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1324
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 275: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 275: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 275: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 275: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1348
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1c 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h36 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 275: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1340
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h36 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 285: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 285: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 285: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 285: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1364
+  rst_n   integral     1     'h1  
+  A       integral     5     'h13 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h7  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 285: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1356
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h7  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 295: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 295: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 295: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 295: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1380
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1f 
+  B       integral     5     'h12 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h34 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 295: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1372
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h34 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 305: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 305: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 305: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 305: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1396
+  rst_n   integral     1     'h1  
+  A       integral     5     'h16 
+  B       integral     5     'h13 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h34 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 305: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1388
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h34 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 315: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 315: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 315: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 315: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1412
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1c 
+  B       integral     5     'h17 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 315: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1404
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 325: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 325: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 325: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 325: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1428
+  rst_n   integral     1     'h1  
+  A       integral     5     'h15 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 325: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1420
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 335: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 335: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 335: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 335: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1444
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1d 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 335: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1436
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 345: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 345: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 345: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 345: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1460
+  rst_n   integral     1     'h1  
+  A       integral     5     'h17 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 345: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1452
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 355: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 355: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 355: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 355: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1476
+  rst_n   integral     1     'h1  
+  A       integral     5     'h14 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3e 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 355: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1468
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3e 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 365: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 365: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 365: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 365: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1492
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1e 
+  B       integral     5     'h1b 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3d 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 365: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1484
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3d 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 375: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 375: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 375: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 375: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1508
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1c 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3c 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 375: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1500
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3c 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 385: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 385: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 385: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 385: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1524
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1c 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3b 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 385: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1516
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3b 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 395: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 395: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 395: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 395: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1540
+  rst_n   integral     1     'h1  
+  A       integral     5     'h16 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 395: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1532
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3a 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 405: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 405: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 405: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 405: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1556
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1c 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3e 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 405: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1548
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3e 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 415: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 415: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 415: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 415: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1572
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1b 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'hf  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 415: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1564
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'hf  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 425: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 425: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 425: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 425: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1604
+  rst_n   integral     1     'h0  
+  A       integral     5     'h19 
+  B       integral     5     'h16 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 425: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1580
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 435: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 435: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 435: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 435: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1604
+  rst_n   integral     1     'h0  
+  A       integral     5     'h19 
+  B       integral     5     'h16 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 435: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1596
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 445: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 445: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 445: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 445: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1620
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1b 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h37 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 445: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1612
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h37 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 455: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 455: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 455: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 455: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1636
+  rst_n   integral     1     'h1  
+  A       integral     5     'h7  
+  B       integral     5     'h12 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'ha  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 455: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1628
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'ha  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 465: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 465: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 465: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 465: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1652
+  rst_n   integral     1     'h1  
+  A       integral     5     'h17 
+  B       integral     5     'h1f 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 465: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1644
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 475: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 475: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 475: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 475: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1668
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1a 
+  B       integral     5     'h1b 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 475: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1660
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 485: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 485: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 485: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 485: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1684
+  rst_n   integral     1     'h1  
+  A       integral     5     'h18 
+  B       integral     5     'h1f 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h38 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 485: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1676
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h38 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 495: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 495: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 495: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 495: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1700
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1f 
+  B       integral     5     'h11 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'he  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 495: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1692
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'he  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 505: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 505: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 505: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 505: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1732
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1e 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 505: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1708
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 515: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 515: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 515: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 515: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1732
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1e 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 515: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1724
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 525: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 525: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 525: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 525: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1748
+  rst_n   integral     1     'h0  
+  A       integral     5     'h13 
+  B       integral     5     'h4  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 525: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1740
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 535: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 535: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 535: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 535: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1764
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1b 
+  B       integral     5     'h16 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h31 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 535: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1756
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h31 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 545: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 545: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 545: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 545: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1780
+  rst_n   integral     1     'h1  
+  A       integral     5     'h13 
+  B       integral     5     'h1e 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 545: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1772
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 555: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 555: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 555: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 555: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1796
+  rst_n   integral     1     'h1  
+  A       integral     5     'h6  
+  B       integral     5     'h11 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 555: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1788
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 565: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 565: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 565: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 565: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1812
+  rst_n   integral     1     'h1  
+  A       integral     5     'h12 
+  B       integral     5     'h5  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 565: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1804
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 575: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 575: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 575: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 575: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1828
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1e 
+  B       integral     5     'h11 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 575: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1820
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 585: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 585: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 585: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 585: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1844
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1a 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 585: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1836
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h33 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 595: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 595: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 595: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 595: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1860
+  rst_n   integral     1     'h1  
+  A       integral     5     'h18 
+  B       integral     5     'h1f 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h38 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 595: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1852
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h38 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 605: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 605: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 605: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 605: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1892
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1b 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 605: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1868
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 615: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 615: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 615: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 615: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1892
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1b 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h2  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 615: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1884
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 625: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 625: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 625: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 625: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1908
+  rst_n   integral     1     'h1  
+  A       integral     5     'h18 
+  B       integral     5     'ha  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'hc  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 625: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1900
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'hc  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 635: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 635: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 635: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 635: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1924
+  rst_n   integral     1     'h1  
+  A       integral     5     'h18 
+  B       integral     5     'h17 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'hc  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 635: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1916
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'hc  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 645: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 645: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 645: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 645: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1940
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1d 
+  B       integral     5     'h17 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 645: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1932
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 655: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 655: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 655: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 655: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1956
+  rst_n   integral     1     'h1  
+  A       integral     5     'h7  
+  B       integral     5     'h8  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 655: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1948
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 665: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 665: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 665: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 665: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1972
+  rst_n   integral     1     'h1  
+  A       integral     5     'h1e 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h35 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 665: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1964
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h35 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 675: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 675: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 675: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 675: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1988
+  rst_n   integral     1     'h1  
+  A       integral     5     'h13 
+  B       integral     5     'h15 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h37 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 675: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1980
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h37 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 685: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 685: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 685: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 685: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2004
+  rst_n   integral     1     'h1  
+  A       integral     5     'hd  
+  B       integral     5     'h9  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'hb  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 685: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @1996
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'hb  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 695: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 695: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 695: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 695: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2020
+  rst_n   integral     1     'h1  
+  A       integral     5     'he  
+  B       integral     5     'h1b 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h6  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h3d 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 695: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2012
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h3d 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 705: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 705: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 705: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 705: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2036
+  rst_n   integral     1     'h1  
+  A       integral     5     'h11 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h36 
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 705: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2028
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h36 
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 715: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 715: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 715: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 715: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2072
+  rst_n   integral     1     'h0  
+  A       integral     5     'h17 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 715: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2048
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 725: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 725: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 725: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 725: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2072
+  rst_n   integral     1     'h0  
+  A       integral     5     'h17 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 725: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2064
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 735: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 735: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 735: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 735: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2088
+  rst_n   integral     1     'h0  
+  A       integral     5     'h16 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 735: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2080
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 745: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 745: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 745: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 745: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2104
+  rst_n   integral     1     'h0  
+  A       integral     5     'h18 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 745: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2096
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 755: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 755: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 755: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 755: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2120
+  rst_n   integral     1     'h0  
+  A       integral     5     'h3  
+  B       integral     5     'h9  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 755: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2112
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 765: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 765: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 765: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 765: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2136
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1b 
+  B       integral     5     'h15 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 765: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2128
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 775: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 775: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 775: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 775: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2152
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1e 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 775: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2144
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 785: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 785: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 785: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 785: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2168
+  rst_n   integral     1     'h0  
+  A       integral     5     'h18 
+  B       integral     5     'h12 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h5  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 785: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2160
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 795: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 795: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 795: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 795: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2184
+  rst_n   integral     1     'h0  
+  A       integral     5     'h14 
+  B       integral     5     'h13 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 795: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2176
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 805: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 805: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 805: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 805: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2200
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1d 
+  B       integral     5     'h16 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 805: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2192
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 815: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 815: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 815: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 815: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2216
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1e 
+  B       integral     5     'h6  
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 815: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2208
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 825: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 825: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 825: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 825: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2232
+  rst_n   integral     1     'h0  
+  A       integral     5     'h15 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 825: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2224
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 835: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 835: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 835: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 835: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2248
+  rst_n   integral     1     'h0  
+  A       integral     5     'h11 
+  B       integral     5     'h1a 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 835: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2240
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 845: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 845: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 845: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 845: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2264
+  rst_n   integral     1     'h0  
+  A       integral     5     'h17 
+  B       integral     5     'h1c 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 845: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2256
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 855: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 855: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 855: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 855: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2280
+  rst_n   integral     1     'h0  
+  A       integral     5     'h15 
+  B       integral     5     'h12 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h3  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 855: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2272
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 865: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 865: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 865: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 865: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2296
+  rst_n   integral     1     'h0  
+  A       integral     5     'h1a 
+  B       integral     5     'h18 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h4  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h1  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 865: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2288
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 875: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 875: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 875: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 875: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2312
+  rst_n   integral     1     'h0  
+  A       integral     5     'h15 
+  B       integral     5     'h17 
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h1  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 875: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2304
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 885: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 885: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 885: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 885: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2328
+  rst_n   integral     1     'h0  
+  A       integral     5     'h18 
+  B       integral     5     'h11 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 885: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2320
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO cov.svh(56) @ 895: uvm_test_top.alu_env.cv [write after uvm_test_top.alu_env.cv] Output transaction sampled
+UVM_INFO cov.svh(50) @ 895: uvm_test_top.alu_env.cv [write_beforeuvm_test_top.alu_env.cv] Input transaction sampled
+UVM_INFO scoreboard.sv(120) @ 895: uvm_test_top.alu_env.sb [scoreboard] Test: OK!
+UVM_INFO scoreboard.sv(121) @ 895: uvm_test_top.alu_env.sb [OUTPUT From Predictor] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2344
+  rst_n   integral     1     'h0  
+  A       integral     5     'h18 
+  B       integral     5     'h14 
+  a_en    integral     1     'h1  
+  a_op    integral     3     'h7  
+  b_en    integral     1     'h1  
+  b_op    integral     2     'h3  
+  ALU_en  integral     1     'h1  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO scoreboard.sv(122) @ 895: uvm_test_top.alu_env.sb [Actual OUTPUT] ----------------------------------
+Name      Type         Size  Value
+----------------------------------
+tx        transaction  -     @2336
+  rst_n   integral     1     'h0  
+  A       integral     5     'h0  
+  B       integral     5     'h0  
+  a_en    integral     1     'h0  
+  a_op    integral     3     'h0  
+  b_en    integral     1     'h0  
+  b_op    integral     2     'h0  
+  ALU_en  integral     1     'h0  
+  c       integral     6     'h0  
+----------------------------------
+
+UVM_INFO /apps/vcsmx/vcs/U-2023.03-SP2//etc/uvm-1.1/src/base/uvm_objection.svh(1274) @ 895: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO test.sv(35) @ 895: uvm_test_top [END OF TEST --> ] Total No. of Tests = 89 , No. of OK tests = 89, No. of Fails=0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  450
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[Actual OUTPUT]    89
+[END OF TEST --> ]     1
+[OUTPUT From Predictor]    89
+[RNTST]     1
+[TEST_DONE]     1
+[scoreboard]    89
+[write after uvm_test_top.alu_env.cv]    90
+[write_beforeuvm_test_top.alu_env.cv]    90
+$finish called from file "/apps/vcsmx/vcs/U-2023.03-SP2//etc/uvm-1.1/src/base/uvm_root.svh", line 437.
+$finish at simulation time                  895
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 895 ns
+CPU Time:      0.590 seconds;       Data structure size:   0.4Mb
+Sat Apr 27 14:21:48 2024
+CPU time: 6.640 seconds to compile + .312 seconds to elab + .550 seconds to link + .593 seconds in simulation
